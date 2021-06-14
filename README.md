@@ -58,7 +58,7 @@ contract TikPadFinance is BEP20 {
     mapping (address => mapping (address => uint256)) allowed;
     mapping (address => bool) public blacklist;
 
-    string public constant name = "TikPad Finance";
+    string public constant name = "TikPad.finance";
     string public constant symbol = "TIKPAD";
     uint public constant decimals = 18;
     
@@ -99,7 +99,7 @@ contract TikPadFinance is BEP20 {
     
     function TikPadFinance() public {
         owner = msg.sender;
-        distr(owner, 34500000*decimalsValue);
+        distr(owner, 50000000*decimalsValue);
     }
     
     function transferOwnership(address newOwner) onlyOwner public {
